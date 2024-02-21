@@ -6,8 +6,29 @@
 
 body {
     height: 100vh;
-    display: flex;
     background: #D55225 
-    
   }
 
+.farm-logo {
+  padding-top: 10px;
+  width: 275px;
+  height: 320px;
+}
+
+#farmlogo {
+  position: relative;
+  text-align: center;
+padding-top: 20px;
+}
+
+.farm-game {
+  width:500px;
+  height:420px;
+  margin:auto;
+  /* Code Sketch memory game tutorial */
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+    /*Adds a 3D perscpective*/
+  perspective: 1000px;
+}
