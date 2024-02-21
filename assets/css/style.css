@@ -46,7 +46,7 @@ padding-top: 20px;
 
   /*3D perspective on card flip JavaScriptAcademy Memory Game tutorial Youtube */
   transform-style: preserve-3d;
-  transition: all 0.5s ease-in-out;
+  transition: transform.2s;
 }
 
 .farm-card:active {
@@ -76,7 +76,7 @@ padding-top: 20px;
   transform: rotateY(180deg);
 }
 
-.moves {
+.moves-info {
   color: black;
   position: relative;
   text-align: center;
@@ -88,6 +88,7 @@ padding-top: 20px;
 .restart-game {
   position: relative;
   text-align: center;
+  padding-bottom: 20px;
 }
 
 .restart-game button {
