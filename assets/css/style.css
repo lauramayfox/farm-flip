@@ -1,3 +1,6 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -29,6 +32,7 @@ padding-top: 20px;
   display: flex;
   flex-wrap: wrap;
   position: relative;
+  padding-bottom: 10px;
     /*3D perspective*/
   perspective: 1000px;
 }
@@ -72,5 +76,25 @@ padding-top: 20px;
   transform: rotateY(180deg);
 }
 
+.moves {
+  color: black;
+  position: relative;
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Oswald';
+  padding-bottom: 10px;
+}
 
+.restart-game {
+  position: relative;
+  text-align: center;
+}
 
+.restart-game button {
+  padding: 8px 18px;
+  font-size: 20px;
+  border-radius: 20px;
+  background-color: #F7941D;
+  border-color: black;
+  font-family: 'Oswald';
+}
