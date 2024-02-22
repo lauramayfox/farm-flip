@@ -51,8 +51,8 @@ function checkForMatch() {
 }
 
 function disableCards () {
-firstCard.removeEventListener('flip');
-secondCard.removeEventListener('flip');
+firstCard.removeEventListener('click', flipCard);
+secondCard.removeEventListener('click', flipCard);
 
 resetBoard();
 }
