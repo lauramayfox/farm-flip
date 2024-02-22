@@ -1,11 +1,28 @@
+//JS Game board functions followed & adapted by Javascript Academy & Code Sketch tutorials - YouTube 
+
 //Variable values not being changed, constant
 const cards = document.querySelectorAll('.farm-card')
+//Event listener for when card is clicked
 cards.forEach(card => card.addEventListener('click', flipCard));
+//Moves counter
+const moveContainer = document.querySelector(".moves");
 
 //Knowing which card flips first to make a match
 let hasFlippedCard = false;
 let firstCard, secondCard;
 let lockBoard = false;
+let moves = 0;
+
+//Score count feature Javascript Academy tutorial
+moves = 0;
+moveContainer.innerHtml = 0;
+
+function addMove() {
+moves++;
+moveContainer.innerHTML = moves;
+}
+
+
 
 //Declaring functions
 function flipCard() {
@@ -28,7 +45,8 @@ secondCard = this;
 function checkForMatch() {
     let isMatch = firstCard.dataset.framework === secondCard.dataset.framework;
     isMatch ? disableCards() : unflipCards();
-
+    
+    addMove();
 
 }
 
