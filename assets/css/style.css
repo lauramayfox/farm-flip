@@ -44,16 +44,16 @@ padding-top: 20px;
   position: relative;
   transform: scale(1);
 
-  /*3D perspective on card flip JavaScriptAcademy Memory Game tutorial Youtube */
+  /*3D perspective on card flip JavaScriptAcademy/Code Sketch Memory Game tutorial Youtube */
   transform-style: preserve-3d;
-  transition: transform.2s;
+  transition: transform .4s;
 }
 
 .farm-card:active {
   transform: scale(.97);
   transition: .2s;
   }
-  
+
   /*3D perspective on card flip Code Sketch Memory Game tutorial Youtube */
   
   .farm-card.flip {
