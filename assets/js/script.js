@@ -6,7 +6,7 @@ cards.forEach(card => card.addEventListener('click', flipCard));
 let hasFlippedCard = false;
 let firstCard, secondCard;
 
-
+//Declaring functions
 function flipCard() {
     this.classList.add('flip');
 
@@ -17,10 +17,30 @@ if (!hasFlippedCard) {
 
     return;
 }
+//On second click
 secondCard = this;
-    
+    checkForMatch();
 }
 
 function checkForMatch() {
-    let isMatch =
+    let isMatch = firstCard.dataset.framework === secondCard.dataset.framework;
+    isMatch ? disableCards() : unflipCards();
+
+
+}
+
+function disableCards () {
+
+}
+
+function unflipCards () {
+
+}
+
+function shuffle() {
+    
+}
+
+function resetBoard() {
+
 }
