@@ -1,4 +1,4 @@
-<h1 align="center"><img src="assets/images/farm-flip-logo.png"/></h1>
+<h1 align="center"><img src="assets/images/readmelogo.png"/></h1>
 
 # Farm Flip 
 
@@ -54,7 +54,7 @@ I searched for similar games on my app store for card-based memory style games f
 # Features
 
 ## Logo 
-<h1 align="left"><img src="/assets/images/farm-flip-logo.png"/></h1>
+<h1 align="center"><img src="/assets/images/readmelogo"/></h1>
 
 ## Background
 
@@ -63,7 +63,7 @@ I searched for similar games on my app store for card-based memory style games f
 
 ## Game Grid
 
-<h1 align="left"><img src="/assets/images/gameboard.png"/></h1>
+<h1 align="center"><img src="/assets/images/gameboard.png"/></h1>
 
 
 ## Game Characters
@@ -74,10 +74,10 @@ I searched for similar games on my app store for card-based memory style games f
 # Features Left To Implement
 
 <ul>
-<li>In the future I would like to split the gallery into another page where reader's own submissions can be posted and keep a separate archive gallery for the older pictures that can be found online.</li>
-<li>Another page idea would be to create an entire timeline, with dates, facts and pictures throughout the years.</li>
-<li>A FAQ section to answer the questions that are likely going to be asked through the contact form</li>
-<li>An online store which will feature merchandise and art relating to the old hotel, potentially in collaboration with local artists.</li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
 </ul>
 
 # Testing
@@ -85,9 +85,10 @@ I searched for similar games on my app store for card-based memory style games f
 <ul>
 <li>The site has been tested on Chrome, Safari & Firefox</li>
 <li>Testing has been implemented on various screen sizes to ensure responsivness across devices. Ipad, Galaxy and laptop testing has been implemented and passed.</li>
-<li>Social media links, footer links and other page links as well as contact form validation have all been tested and passed. </li>
+<li></li>
 </ul>
-Validator Testing
+
+## Validator Testing
 
 ## HTML:
 
@@ -106,9 +107,9 @@ Validator Testing
 
 # Bugs/Errors
 <ul>
-<li>I fixed some intitial bugs relating to hierarchy on the homepage. The hero image text was warning me not to use H1, as the header already contained an H1 element. Same issue on the footer with hierarchy and headers. Both issues resolved.</li>
+<li></li>
 
-<li>The CSS had some bug fixes relating to extra brackets which was fixed.</li>
+<li></li>
 
 
 
@@ -127,24 +128,16 @@ The site was deployed to GitHub pages - https://lauramayfox.github.io/latoucheho
 
 ## Content
 
-The article text for the Home page was taken from: <a href="https://www.independent.ie/regionals/wicklow/bray-news/old-hotel-is-transformed/39730580.html" target="_blank">The Irish Independent</a>
+Javascript tutorial followed/adapted <a href="https://www.youtube.com/@CodeSketchLab" target="_blank">Code Sketch YouTube</a>
+Javascript tutorial followed/adapted <a href="https://www.youtube.com/@JsAcademyOfficial" target="_blank">Javascript Academy Youtube YouTube</a>
+General source of knowledge: <a href="https://www.w3schools.com" target="_blank">W3Schools</a>
 
-Header: Love Running project walk-through to build the responsive header.
 
-Footer: The Web Shala (YouTube) walk through video on how to contruct a responsive footer
-
-Contact section: Adaption of <a href="https://www.w3schools.com" target="_blank">W3Schools</a> walk through form building tutorial.
-
-Hero image section: Hero banner image walk-through by Career & Tech HQ (YouTube).
-
-Gallery: Layout tutorial from W3Schools responsive image gallery tutorial
 
 
 ## Media:
 <ul>
-<li>Gallery Photos & Hero Image: Historical Greystones archieve on Facebook, Greystones Guide</li>
 <li>Fonts: <a href="https://fonts.google.com/" target="_blank">Google Fonts</a></li>
-<li>Favicon: Prashanth Rapolu on <a href="https://freepiks.com" target="_blank">FreePiks</a></li>
-<li>Footer social media icons: <a href="https://fontawesome.com" target="_blank">Font Awesome</a></li>
-<li>Illustrations: Own content</li>
+<li>Card front imagery source: <a href="https://freepiks.com" target="_blank">FreePiks</a></li>
+<li>Logo llustrations: Own content</li>
 </ul>
