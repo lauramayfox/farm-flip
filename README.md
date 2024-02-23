@@ -58,7 +58,7 @@ I searched for similar games on my app store for card-based memory style games f
 
 ## Background
 
-<h1 align="center"><img src="/assets/images/"/></h1>
+<h1 align="center"><img src="/assets/images/background.png"/></h1>
 
 
 ## Game Grid
@@ -68,7 +68,7 @@ I searched for similar games on my app store for card-based memory style games f
 
 ## Game Characters
 
-<h1 align="center"><img src="/assets/images/gamecharacters.jpg"/></h1>
+<h1 align="center"><img src="/assets/images/gamecharacters.png"/></h1>
 
 
 # Features Left To Implement
