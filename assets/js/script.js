@@ -3,7 +3,7 @@
 //Variable values not being changed, constant
 const cards = document.querySelectorAll('.farm-card')
 //Event listener for when card is clicked
-cards.forEach(card => card.addEventListener('click', flipCard));
+cards.forEach(card => card.addEventListener('click', flipCard)); shuffle();
 //Moves counter
 const moveContainer = document.querySelector(".moves");
 
@@ -78,4 +78,17 @@ function resetBoard() {
     [hasFlippedCard, lockBoard] = [false, false];
     [firstCard, secondCard] = [null, null];
 
+}
+//Restart Game Button adaption of Javascript Academy tutorial
+function restart() {
+     setTimeout(() => {
+    moves = 0;
+    moveContainer.innerHTML = 0;
+    flippedCard = false;
+    hasFlippedCard = false;
+    [firstCard, secondCard] = [null, null];
+    cards.forEach(cardReset => cardReset.classList.remove('flip'));
+    shuffle();
+    cards.forEach(card => card.addEventListener('click', flipCard));
+}, 300);
 }

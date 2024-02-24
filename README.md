@@ -56,9 +56,6 @@ I searched for similar games on my app store for card-based memory style games f
 ## Logo 
 <h1 align="center"><img src="/assets/images/readmelogo"/></h1>
 
-## Background
-
-<h1 align="center"><img src="/assets/images/background.png"/></h1>
 
 
 ## Game Grid
