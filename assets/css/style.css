@@ -94,7 +94,21 @@ padding-top: 20px;
 }
 
 .restart-game button {
-  padding: 8px 18px;
+  padding: 6px 18px;
+  font-size: 20px;
+  border-radius: 20px;
+  background-color: #F7941D;
+  border-color: black;
+  font-family: 'Oswald';
+}
+.game-rules {
+  position: relative;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.game-rules button {
+  padding: 6px 27px;
   font-size: 20px;
   border-radius: 20px;
   background-color: #F7941D;
