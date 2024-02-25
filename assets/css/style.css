@@ -161,23 +161,25 @@ font-size: 1.4rem;
 }
 
 .modal-body {
-  padding: 15px 20px;
+  padding: 20px 25px;
+ 
+
 }
 
+/* Web Dev Simplified tutorial adaption for overlay when using a modal */
 #overlay {
-  position:fixed;
+  position: fixed;
   opacity: 0;
   transition: 200ms ease-in-out;
-  /*push up to all 4 corners*/
-  top:0;
-  left:0;
-  right:0;
-  bottom:0;
-  background-color: #f7951da0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #f7951db4;
   pointer-events: none;
 }
-/* Web Dev Simplified tutorial - to make nothing in background clickable when modal appears */
-#overlay:active {
-opacity: 1;
-pointer-events: all;
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
 }
