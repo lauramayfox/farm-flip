@@ -9,7 +9,7 @@
 
 body {
     height: 100vh;
-    background: #D55225 
+    background: #D55225;
   }
 
 .farm-logo {
@@ -124,7 +124,9 @@ padding-top: 20px;
   /* Web Dev Simplified tutorial for centering modal */
   top:50%;
   left:50%;
-  transform: translate(-50%,-50%);
+  /* Scale used for smooth transition in/out */
+  transform: translate(-50%,-50%) /*makes it invisible*/ scale(0);
+  transition: 200ms ease-in-out;
   border: 3px solid rgba(0, 0, 0, 0.804);
   border-radius: 10px;
   z-index: 10;
@@ -133,6 +135,9 @@ padding-top: 20px;
   max-width: 80%;
 }
 
+.modal.active {
+  transform: translate(-50%,-50%) scale(1);
+}
 .modal-header {
 padding:15px 20px;
 display: flex;
@@ -159,4 +164,20 @@ font-size: 1.4rem;
   padding: 15px 20px;
 }
 
-
+#overlay {
+  position:fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  /*push up to all 4 corners*/
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  background-color: #f7951da0;
+  pointer-events: none;
+}
+/* Web Dev Simplified tutorial - to make nothing in background clickable when modal appears */
+#overlay:active {
+opacity: 1;
+pointer-events: all;
+}
