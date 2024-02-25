@@ -7,11 +7,14 @@ cards.forEach(card => card.addEventListener('click', flipCard)); shuffle();
 //Moves counter
 const moveContainer = document.querySelector(".moves");
 
+
+
 //Knowing which card flips first to make a match
 let hasFlippedCard = false;
 let firstCard, secondCard;
 let lockBoard = false;
 let moves = 0;
+
 
 //Score count feature Javascript Academy tutorial
 moves = 0;
@@ -22,9 +25,6 @@ moves++;
 moveContainer.innerHTML = moves;
 }
 
-
-
-//Declaring functions
 function flipCard() {
     if (lockBoard) return;
     if (this === firstCard) return;
@@ -47,6 +47,8 @@ function checkForMatch() {
     isMatch ? disableCards() : unflipCards();
     
     addMove();
+
+
 
 }
 

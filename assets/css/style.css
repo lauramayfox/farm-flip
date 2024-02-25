@@ -118,3 +118,45 @@ padding-top: 20px;
   border-color: black;
   font-family: 'Oswald';
 }
+
+.modal {
+  position: fixed;
+  /* Web Dev Simplified tutorial for centering modal */
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  border: 3px solid rgba(0, 0, 0, 0.804);
+  border-radius: 10px;
+  z-index: 10;
+  background-color: #fced21db;
+  width:350px;
+  max-width: 80%;
+}
+
+.modal-header {
+padding:15px 20px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+border-bottom: 2px solid rgba(0, 0, 0, 0.804)
+}
+
+.modal-header .title {
+  font-family: "Oswald";
+  font-size: 1.3rem;
+}
+
+.modal-header .close {
+cursor:pointer;
+border: none;
+outline: none;
+background: none;
+font-weight: bold;
+font-size: 1.4rem;
+}
+
+.modal-body {
+  padding: 15px 20px;
+}
+
+
