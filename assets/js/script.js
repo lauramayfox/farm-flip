@@ -3,14 +3,15 @@ const cards = document.querySelectorAll('.farm-card')
 //Moves counter
 const moveContainer = document.querySelector(".moves");
 //Rules Button
-const openModalButtons = document.querySelectorAll('[data-modal-target]')
-const closeModalButtons = document.querySelectorAll('[data-close-button]')
+const openModalButton = document.querySelectorAll('[data-modal-target]')
+const closeModalButton = document.querySelectorAll('[data-close-button]')
 const overlay = document.getElementById('overlay')
 
 //Event listener for when card is clicked
 cards.forEach(card => card.addEventListener('click', flipCard)); shuffle();
+
 //Event Listener for Buttons open/close Web Dev Simplified tutorial
-openModalButtons.forEach(button => {
+openModalButton.forEach(button => {
     button.addEventListener('click', () => {
       const modal = document.querySelector(button.dataset.modalTarget)
       openModal(modal)
@@ -24,7 +25,7 @@ openModalButtons.forEach(button => {
     })
   })
   
-  closeModalButtons.forEach(button => {
+  closeModalButton.forEach(button => {
     button.addEventListener('click', () => {
       const modal = button.closest('.modal')
       closeModal(modal)
@@ -32,13 +33,15 @@ openModalButtons.forEach(button => {
   })
   
   function openModal(modal) {
-    if (modal == null) return
+    if (modal == null) {
+      return}
     modal.classList.add('active')
     overlay.classList.add('active')
   }
   
   function closeModal(modal) {
-    if (modal == null) return
+    if (modal == null) {
+      return}
     modal.classList.remove('active')
     overlay.classList.remove('active')
   }
@@ -62,8 +65,10 @@ moveContainer.innerHTML = moves;
 }
 
 function flipCard() {
-    if (lockBoard) return;
-    if (this === firstCard) return;
+    if (lockBoard) {
+      return}
+    if (this === firstCard) {
+      return}
     this.classList.add('flip');
 
 //Adding a condition
