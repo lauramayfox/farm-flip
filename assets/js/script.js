@@ -2,7 +2,7 @@
 const cards = document.querySelectorAll('.farm-card')
 //Moves counter
 const moveContainer = document.querySelector(".moves");
-//Button - Rules
+//Rules Button
 const openModalButtons = document.querySelectorAll('[data-modal-target]')
 const closeModalButtons = document.querySelectorAll('[data-close-button]')
 const overlay = document.getElementById('overlay')
@@ -16,7 +16,7 @@ openModalButtons.forEach(button => {
       openModal(modal)
     })
   })
-  //Closes modal when clicking outside the modal box
+  //Closes modal when clicking outside the modal box Web Dev Simplified tutorial 
   overlay.addEventListener('click', () => {
     const modals = document.querySelectorAll('.modal.active')
     modals.forEach(modal => {
