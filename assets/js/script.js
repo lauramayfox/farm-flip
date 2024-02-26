@@ -113,9 +113,10 @@ function shuffle() {
     }) }
 
 function resetBoard() {
-    [hasFlippedCard, lockBoard] = [false, false];
-    [firstCard, secondCard] = [null, null];
-
+  hasFlippedCard = false;
+  lockBoard = false;
+  firstCard = null;
+  secondCard = null;
 }
 //Restart Game Button adaption of Javascript Academy tutorial
 function restart() {
@@ -124,7 +125,8 @@ function restart() {
     moveContainer.innerHTML = 0;
     flippedCard = false;
     hasFlippedCard = false;
-    [firstCard, secondCard] = [null, null];
+    firstCard = null;
+    secondCard = null;
     cards.forEach(cardReset => cardReset.classList.remove('flip'));
     shuffle();
     cards.forEach(card => card.addEventListener('click', flipCard));
