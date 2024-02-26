@@ -192,18 +192,20 @@ font-size: 1.4rem;
 /* Media Queries */
 @media only screen and (max-width: 680px) {
   
-.farm-game {
-    width: 100vw;
-    grid-gap: 3px;
-    margin: 20px auto;
-   
-  }
+  .farm-game {
+    width:45vh;
+    height:45vh;
+    margin: auto; }
 
-  .farm-card {
-    height: 80px;
-    width: 80px;
-  }
+ 
+    .farm-logo {
+      padding-top: 10px;
+      width: 225px;
+      height: 270px;
+    }
 
+  
+  
 
 
 }
