@@ -42,11 +42,11 @@ The core concept of farm animals was decided upon after choosing my logo from my
 ## Wireframes
 
 In the planning stages, I used Adobe illustrator to play around with the elements before starting the project. I had an initial idea in my head to layout the elements side-by-side, as pictured below. Once I got to the styling elements of the design, I realised this would not be the ideal layout with user-experience in mind as it's not fluid and there's no visual hierarchy.
-<h1 align="center"><img src="/assets/images/wireframe.jpg"/></h1>
+<h1 align="center"><img src="/assets/images/wireframe1.png"/></h1>
 
 I went back to my artboard and decided that stacking them centred in block formation was more appealing to the eye, and this was the visual idea I came up with that I went into the project with.
 
-<h1 align="center"><img src="/assets/images/wireframe2.jpg"/></h1>
+<h1 align="center"><img src="/assets/images/wireframe2.png"/></h1>
 
 ## Research
 
@@ -57,7 +57,7 @@ I searched for similar card style games on both my app store and online for card
 ## Logo 
 
 The logo was inpired by a previous design I did for a fictitius chicken restaurant, and i changed the lettering for this gaming project. The logo in turn inspired the entire theme of the game.
-<h1 align="center"><img src="/assets/images/readmelogo"/></h1>
+<h1 align="center"><img src="/assets/images/readmelogo.png"/></h1>
 
 
 
@@ -71,21 +71,25 @@ I chose the gaming characters based off the farm theme concept, and found a suit
 <h1 align="center"><img src="/assets/images/gamecharacters.png"/></h1>
 
 ## Navigation
-<h1 align="center"><img src="/assets/images/"/></h1>
+
+For the navigation buttons I chose the Oswald font as I wanted a sans-serif similar to the font I manipulated on the logo. I chose the same orange as the card back to keep the visual design elements in line with one another. The borders are rounded off and the curser will change to a pointer once hovered over.
+<h1 align="center"><img src="/assets/images/readmerules.png"/></h1>
 
 ## Moves
+I wanted to keep the moves tracker quite simple, similar to that of other online games, or an old school arcade type of game. The font family and style is the same used as the navigation buttons and the move counter sits directly below the game grid.
 <h1 align="center"><img src="/assets/images/moves.png"/></h1>
 
 ## Rules Modal
+Upon clicking the rules button, a display modal appears explaining how to play the game. I put an opacity overlay in the board background when the modal is active to add a bit more styling. The modal itself is bright yellow, the same as the yellow featured in the logo, and the font is the same Oswald font used throughout the project for consistency.
 <h1 align="center"><img src="/assets/images/howtoplay.png"/></h1>
+
+## Win Modal
 
 # Features Left To Implement
 
 <ul>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
+<li>Addition of a highest score leaderboard would be a nice addition I would like to add, for the player to see their own highest scores to try and beat previous personal bests.</li>
+<li>The implementation of moving imagery, where I can animate the logo and cause the characters to move when a matching pair is found. Similar to how you would see a card game in a casino on screen.</li>
 </ul>
 
 # Testing
@@ -107,18 +111,12 @@ I chose the gaming characters based off the farm theme concept, and found a suit
 
 ## Lighthouse Report:
 
-
-
-<h1 align="center"><img src=""/></h1>
-<h1 align="center"><img src=""/></h1>
-
-
-# Bugs/Errors
+# Bugs/Errors or Issues Encountered
 <ul>
+<li>I encountered some issues with the positioning within CSS when I was first piecing everything together with the layout. It was an easy fix in the end and had to do with flex boxes causing me problems.</li>
+<li>I had some initial issues with syncing up the move counter within the function, after watching several more online tutorials, I managed to figure it out and get it to work.</li>
 <li></li>
-
-<li></li>
-
+</ul>
 
 
 
@@ -127,15 +125,15 @@ I chose the gaming characters based off the farm theme concept, and found a suit
 The site was deployed to GitHub pages - <a href ="https://lauramayfox.github.io/farm-flip/">Live Link</a>
 
 ## Steps To Deployment
-
-Log onto GitHub and locate the repository.
-On the options bar, hit the settings.
-Go to the pages tab on the left hand side bar.
-Choose 'Master' in the source options drop down menu (default will be 'None).
+<ul>
+<li>Log onto GitHub and locate the repository.</li>
+<li>On the options bar, hit the settings.</li>
+<li>Go to the pages tab on the left hand side bar.</li>
+<li>Choose 'Master' in the source options drop down menu (default will be 'None).</li>
 Click save.
-Wait a few minutes for the changes to be updated and created.
-Once ready, the update will prompt that the site is ready at https://lauramayfox.github.io/farm-flip/
-
+<li>Wait a few minutes for the changes to be updated and created.</li>
+<li>Once ready, the update will prompt "Your site is live at https://lauramayfox.github.io/farm-flip/ (Last deployed by lauramayfox)" with the option to click on the 'Visit Site' button to the right of this.</li>
+</ul>
 
 
 # Credits 

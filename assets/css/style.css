@@ -97,6 +97,7 @@ padding-top: 20px;
 }
 
 .restart-game button {
+  cursor:pointer;
   padding: 6px 18px;
   font-size: 25px;
   border-radius: 20px;
@@ -112,6 +113,7 @@ padding-top: 20px;
 }
 
 .game-rules button {
+  cursor:pointer;
   padding: 6px 27px;
   font-size: 25px;
   border-radius: 20px;
