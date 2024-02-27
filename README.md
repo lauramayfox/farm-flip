@@ -105,13 +105,35 @@ When all cards are turned and the game is over, a pop-up win alert will be trigg
 ## Validator Testing
 
 ## HTML:
-
+The initial validator testing showed issue with my section for the imagery on the cards. I went back and updated the section to a div
+<h1 align="center"><img src="/assets/images/html.png"/></h1>
 
 ## CSS:
+
+The CSS passed validation.
+<p>
+    <a href="https://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
+            alt="Valid CSS!" />
+    </a>
+</p>
+
+## JavaScript:
+JavaScript code was run through <a href="https://www.https://codebeautify.org/jsvalidate" target="_blank">Code Beautify</a> which mentioned an unexpected 'const' on line 2.
 
 
 
 ## Lighthouse Report:
+Overall, I am happy with how the LightHouse report results came up. I have read through and made note of some of the subtle changes that could help my game to get fuller marks for future deployments.
+
+### Lighthouse - Mobile Devices
+
+<h1 align="center"><img src="/assets/images/mobile.png"/></h1>
+
+### Lighthouse Desktop
+
+<h1 align="center"><img src="/assets/images/desktop.png"/></h1>
 
 # Bugs/Errors or Issues Encountered
 <ul>
@@ -119,7 +141,6 @@ When all cards are turned and the game is over, a pop-up win alert will be trigg
 <li>I had some initial issues with syncing up the move counter within the function, after watching several more online tutorials, I managed to figure it out and get it to work.</li>
 <li>I ran into some confusion with the endGame function when it was being called. Initially, it would pop up at the wrong time, but upon contacting tutoring services, they helped put me on the right path. It was a minor issue that I managed to resolve.</li>
 </ul>
-
 
 
 # Deployment
@@ -151,7 +172,7 @@ Click save.
 
 ## Formatting
 <ul>
-<li>Javascript formatting tool:<a href="https://www.prettier.io" target="_blank">Prettier</a></li>
+<li>Javascript formatting tool: <a href="https://www.prettier.io" target="_blank">Prettier</a></li>
 <li>HTML & CSS formatting tool: <a href="https://www.freeformatter.com" target="_blank">Free Formatter</a></li>
 </ul>
 
