@@ -84,19 +84,23 @@ secondCard = this;
     checkForMatch();
 }
 
+
 function checkForMatch() {
-    let isMatch = firstCard.dataset.framework === secondCard.dataset.framework;
-    isMatch ? disableCards() : unflipCards();
-    
-    addMove();
-  
-   revealedCards += 2
-    if (revealedCards === totalNumberOfCards) {
+  let isMatch = firstCard.dataset.framework === secondCard.dataset.framework;
+  if (isMatch) {
+    disableCards();
+    revealedCards += 2;
+  } else {
+    unflipCards();
+  }
+  addMove();
+  if (revealedCards === totalNumberOfCards) {
     endGame();
-    }
+  }
 }
 
 
+//Code Sketch Lab adaptation
 
 function disableCards () {
 firstCard.removeEventListener('click', flipCard);
@@ -143,11 +147,12 @@ function restart() {
 }, 300);
 }
 
-//End game
+//End game to trigger alert and reset cards
 function endGame() {
   setTimeout(() => {
     cards.forEach(card => card.classList.remove('flip'));
     resetBoard();
-    alert('Win! ');
+    alert('Win!');
+    restart();
   }, 1500); 
 }
