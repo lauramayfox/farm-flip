@@ -1,11 +1,19 @@
 //Variable values
 const cards = document.querySelectorAll('.farm-card')
+var totalNumberOfCards = cards.length
 //Moves counter
 const moveContainer = document.querySelector(".moves");
 //Rules Button
 const openModalButton = document.querySelectorAll('[data-modal-target]')
 const closeModalButton = document.querySelectorAll('[data-close-button]')
 const overlay = document.getElementById('overlay')
+
+//Knowing which card flips first to make a match
+let hasFlippedCard = false;
+let firstCard, secondCard;
+let lockBoard = false;
+let moves = 0;
+let revealedCards = 0;
 
 //Event listener for when card is clicked
 cards.forEach(card => card.addEventListener('click', flipCard)); shuffle();
@@ -48,13 +56,6 @@ openModalButton.forEach(button => {
 
 
 
-//Knowing which card flips first to make a match
-let hasFlippedCard = false;
-let firstCard, secondCard;
-let lockBoard = false;
-let moves = 0;
-
-
 //Score count feature Javascript Academy tutorial
 moves = 0;
 moveContainer.innerHtml = 0;
@@ -88,10 +89,14 @@ function checkForMatch() {
     isMatch ? disableCards() : unflipCards();
     
     addMove();
-
-
-
+  
+   revealedCards += 2
+    if (revealedCards === totalNumberOfCards) {
+    endGame();
+    }
 }
+
+
 
 function disableCards () {
 firstCard.removeEventListener('click', flipCard);
@@ -136,4 +141,13 @@ function restart() {
     shuffle();
     cards.forEach(card => card.addEventListener('click', flipCard));
 }, 300);
+}
+
+//End game
+function endGame() {
+  setTimeout(() => {
+    cards.forEach(card => card.classList.remove('flip'));
+    resetBoard();
+    alert('Win! ');
+  }, 1500); 
 }
