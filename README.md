@@ -105,7 +105,7 @@ I chose the gaming characters based off the farm theme concept, and found a suit
 
 
 
-## Lighthouse report:
+## Lighthouse Report:
 
 
 
@@ -124,11 +124,17 @@ I chose the gaming characters based off the farm theme concept, and found a suit
 
 # Deployment
 
-The site was deployed to GitHub pages - https://lauramayfox.github.io/latouchehotel/ 
+The site was deployed to GitHub pages - <a href ="https://lauramayfox.github.io/farm-flip/">Live Link</a>
 
 ## Steps To Deployment
 
-<h1 align="left"><img src=""/></h1>
+Log onto GitHub and locate the repository.
+On the options bar, hit the settings.
+Go to the pages tab on the left hand side bar.
+Choose 'Master' in the source options drop down menu (default will be 'None).
+Click save.
+Wait a few minutes for the changes to be updated and created.
+Once ready, the update will prompt that the site is ready at https://lauramayfox.github.io/farm-flip/
 
 
 
