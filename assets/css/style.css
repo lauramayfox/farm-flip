@@ -2,212 +2,216 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
 
 body {
-    height: 100vh;
-    background: #D55225;
-  }
+	height: 100vh;
+	background: #D55225;
+}
 
 .farm-logo {
-  padding-top: 10px;
-  width: 275px;
-  height: 320px;
+	padding-top: 10px;
+	width: 275px;
+	height: 320px;
 }
 
 #farmlogo {
-  position: relative;
-  text-align: center;
-padding-top: 20px;
+	position: relative;
+	text-align: center;
+	padding-top: 20px;
 }
 
 .farm-game {
-  width:500px;
-  height:420px;
-  margin:auto;
-  /* Code Sketch memory game tutorial */
-  display: flex;
-  flex-wrap: wrap;
-  position: relative;
-  padding-bottom: 10px;
-    /*3D perspective*/
-  perspective: 1000px;
+	width: 500px;
+	height: 420px;
+	margin: auto;
+	/* Code Sketch memory game tutorial */
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+	padding-bottom: 10px;
+	/*3D perspective*/
+	perspective: 1000px;
 }
 
 .farm-card {
-  width: calc(25% - 10px);
-  height: calc(33.333% - 10px);
-  margin: 5px;
-  position: relative;
-  transform: scale(1);
+	width: calc(25% - 10px);
+	height: calc(33.333% - 10px);
+	margin: 5px;
+	position: relative;
+	transform: scale(1);
 
-  /*3D perspective on card flip JavaScriptAcademy/Code Sketch Memory Game tutorial Youtube */
-  transform-style: preserve-3d;
-  transition: transform .4s;
+	/*3D perspective on card flip JavaScriptAcademy/Code Sketch Memory Game tutorial Youtube */
+	transform-style: preserve-3d;
+	transition: transform .4s;
 }
 
 .farm-card:active {
-  transform: scale(.97);
-  transition: .2s;
-  }
-
-  /*3D perspective on card flip Code Sketch Memory Game tutorial Youtube */
-  
-  .farm-card.flip {
-      transform: rotateY(180deg);
-  }
-
-  .front-face,
-.back-face {
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  padding: 15px;
-  position: absolute;
-  border-radius: 13px;
-  border-width: .2.5px;
-  border: 3px solid white;
-  background: #F7941D;
-  backface-visibility: hidden;
+	transform: scale(.97);
+	transition: .2s;
 }
+
+/*3D perspective on card flip Code Sketch Memory Game tutorial Youtube */
+
+.farm-card.flip {
+	transform: rotateY(180deg);
+}
+
+.front-face,
+.back-face {
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	padding: 15px;
+	position: absolute;
+	border-radius: 13px;
+	border-width: .2.5px;
+	border: 3px solid white;
+	background: #F7941D;
+	backface-visibility: hidden;
+}
+
 /*3D perspective on card flip JavaScriptAcademy Memory Game tutorial Youtube */
 .front-face {
-  transform: rotateY(180deg);
+	transform: rotateY(180deg);
 }
 
 .moves-info {
-  color: black;
-  position: relative;
-  text-align: center;
-  font-size: 25px;
-  font-family: 'Oswald';
-  padding-bottom: 10px;
+	color: black;
+	position: relative;
+	text-align: center;
+	font-size: 25px;
+	font-family: 'Oswald';
+	padding-bottom: 10px;
 }
 
 .buttons {
- display: flex;
- justify-content: center;
+	display: flex;
+	justify-content: center;
 }
+
 .restart-game {
-  padding-bottom: 20px;
-  margin-right: 20px;
+	padding-bottom: 20px;
+	margin-right: 20px;
 }
 
 .restart-game button {
-  cursor:pointer;
-  padding: 6px 18px;
-  font-size: 25px;
-  border-radius: 20px;
-  color:black;
-  background-color: #F7941D;
-  border-color: black;
-  font-family: 'Oswald';
+	cursor: pointer;
+	padding: 6px 18px;
+	font-size: 25px;
+	border-radius: 20px;
+	color: black;
+	background-color: #F7941D;
+	border-color: black;
+	font-family: 'Oswald';
 }
+
 .game-rules {
-  padding-bottom: 20px;
-  margin-left: 20px;
+	padding-bottom: 20px;
+	margin-left: 20px;
 
 }
 
 .game-rules button {
-  cursor:pointer;
-  padding: 6px 27px;
-  font-size: 25px;
-  border-radius: 20px;
-  color:black;
-  background-color: #F7941D;
-  border-color: black;
-  font-family: 'Oswald';
+	cursor: pointer;
+	padding: 6px 27px;
+	font-size: 25px;
+	border-radius: 20px;
+	color: black;
+	background-color: #F7941D;
+	border-color: black;
+	font-family: 'Oswald';
 }
 
 .modal {
-  position: fixed;
-  /* Web Dev Simplified tutorial for centering modal */
-  top:50%;
-  left:50%;
-  /* Scale used for smooth transition in/out Web Dev Simplified tutorial */
-  transform: translate(-50%,-50%) /*makes it invisible*/ scale(0);
-  transition: 200ms ease-in-out;
-  border: 3px solid rgba(0, 0, 0, 0.804);
-  border-radius: 10px;
-  z-index: 10;
-  background-color: #fced21db;
-  width:350px;
-  max-width: 80%;
+	position: fixed;
+	/* Web Dev Simplified tutorial for centering modal */
+	top: 50%;
+	left: 50%;
+	/* Scale used for smooth transition in/out Web Dev Simplified tutorial */
+	transform: translate(-50%, -50%)
+		/*makes it invisible*/
+		scale(0);
+	transition: 200ms ease-in-out;
+	border: 3px solid rgba(0, 0, 0, 0.804);
+	border-radius: 10px;
+	z-index: 10;
+	background-color: #fced21db;
+	width: 350px;
+	max-width: 80%;
 }
 
 .modal.active {
-  transform: translate(-50%,-50%) scale(1);
+	transform: translate(-50%, -50%) scale(1);
 }
+
 .modal-header {
-padding:15px 20px;
-display: flex;
-justify-content: space-between;
-align-items: center;
-border-bottom: 2px solid rgba(0, 0, 0, 0.804)
+	padding: 15px 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 2px solid rgba(0, 0, 0, 0.804)
 }
 
 .modal-header .title {
-  font-family: "Oswald";
-  font-style: bold;
-  font-size: 1.3rem;
+	font-family: "Oswald";
+	font-style: bold;
+	font-size: 1.3rem;
 }
 
 .modal-header .close {
-cursor:pointer;
-border: none;
-color:black;
-outline: none;
-background: none;
-font-weight: bold;
-font-size: 1.4rem;
+	cursor: pointer;
+	border: none;
+	color: black;
+	outline: none;
+	background: none;
+	font-weight: bold;
+	font-size: 1.4rem;
 }
 
 .modal-body {
-  padding: 20px 25px;
-  font-family: "Oswald";
- 
+	padding: 20px 25px;
+	font-family: "Oswald";
+
 
 }
 
 /* Web Dev Simplified tutorial adaption for overlay when using a modal */
 #overlay {
-  position: fixed;
-  opacity: 0;
-  transition: 200ms ease-in-out;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #f7951db4;
-  pointer-events: none;
+	position: fixed;
+	opacity: 0;
+	transition: 200ms ease-in-out;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #f7951db4;
+	pointer-events: none;
 }
 
 #overlay.active {
-  opacity: 1;
-  pointer-events: all;
+	opacity: 1;
+	pointer-events: all;
 }
 
 /* Media Queries */
 @media only screen and (max-width: 680px) {
-  
-  .farm-game {
-    width:45vh;
-    height:45vh;
-    margin: auto; }
 
- 
-    .farm-logo {
-      padding-top: 10px;
-      width: 225px;
-      height: 270px;
-    }
+	.farm-game {
+		width: 45vh;
+		height: 45vh;
+		margin: auto;
+	}
 
-  
-  
+
+	.farm-logo {
+		padding-top: 10px;
+		width: 225px;
+		height: 270px;
+	}
 
 
 }

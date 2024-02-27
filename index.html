@@ -1,106 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <!-- Meta tags for search engines -->
       <meta name="description"
-      content="Farm Flip. Interactive online card game: players need to match all cards.">
-  <meta name="keywords" content="card game, game, farm animal game, kids game">
-    <!--Style Sheet-->
-    <link rel="stylesheet" href="assets/css/style.css">
-<!--Favicon-->
-    <link rel='shortcut icon' type='image/x-icon' href='assets/images/favicon.png' />
-    <title>Farm Flip</title>
-</head>
-<body>
-<!--Logo-->
-<div id="farmlogo">
-    <img class="farm-logo" src="assets/images/farmlogo.png" alt="Game logo of a rooster">
-</div>
-    <!--The 12 cards to the game (6 images)-->
-    <section class="farm-game">
-        <div class="farm-card" data-framework = "chickfront">
+         content="Farm Flip. Interactive online card game: players need to match all cards.">
+      <meta name="keywords" content="card game, game, farm animal game, kids game">
+      <!--Style Sheet-->
+      <link rel="stylesheet" href="assets/css/style.css">
+      <!--Favicon-->
+      <link rel='shortcut icon' type='image/x-icon' href='assets/images/favicon.png' />
+      <title>Farm Flip</title>
+   </head>
+   <body>
+      <!--Logo-->
+      <div id="farmlogo">
+         <img class="farm-logo" src="assets/images/farmlogo.png" alt="Game logo of a rooster">
+      </div>
+      <!--The 12 cards to the game (6 images)-->
+      <section class="farm-game">
+         <div class="farm-card" data-framework = "chickfront">
             <img class="front-face" src="assets/images/chickfront.png" alt="Chicken image front card">
             <img class="back-face" src="assets/images/cardback.png" alt="Back of card game">
-        </div>
-        <div class="farm-card" data-framework ="chickfront">
+         </div>
+         <div class="farm-card" data-framework ="chickfront">
             <img class="front-face" src="assets/images/chickfront.png" alt="Chicken image front card">
             <img class="back-face" src="assets/images/cardback.png" alt="Back of card game">
-        </div>
-        <div class="farm-card" data-framework ="cowfront">
+         </div>
+         <div class="farm-card" data-framework ="cowfront">
             <img class="front-face" src="assets/images/cowfront.png" alt="Cow image front card">
             <img class="back-face" src="assets/images/cardback.png" alt="Back of card game">
-        </div>
-        <div class="farm-card" data-framework ="cowfront">
+         </div>
+         <div class="farm-card" data-framework ="cowfront">
             <img class="front-face" src="assets/images/cowfront.png" alt="Cow image front card">
             <img class="back-face" src="assets/images/cardback.png" alt="Back of card game">
-        </div>
-        <div class="farm-card" data-framework = "dogfront">
+         </div>
+         <div class="farm-card" data-framework = "dogfront">
             <img class="front-face" src="assets/images/dogfront.png" alt="Dog image front card">
             <img class="back-face" src="assets/images/cardback.png" alt="Back of card game">
-        </div>
-        <div class="farm-card" data-framework = "dogfront">
+         </div>
+         <div class="farm-card" data-framework = "dogfront">
             <img class="front-face" src="assets/images/dogfront.png" alt="Dog image front card">
             <img class="back-face" src="assets/images/cardback.png" alt="Back of card game">
-        </div>
-        <div class="farm-card" data-framework = "donkeyfront">
+         </div>
+         <div class="farm-card" data-framework = "donkeyfront">
             <img class="front-face" src="assets/images/donkeyfront.png" alt="Donkey image front card">
             <img class="back-face" src="assets/images/cardback.png" alt="Back of card game">
-        </div>
-        <div class="farm-card" data-framework = "donkeyfront">
+         </div>
+         <div class="farm-card" data-framework = "donkeyfront">
             <img class="front-face" src="assets/images/donkeyfront.png" alt="Donkey image front card">
             <img class="back-face" src="assets/images/cardback.png" alt="Back of card game">
-        </div>
-        <div class="farm-card" data-framework = "roosterfront">
+         </div>
+         <div class="farm-card" data-framework = "roosterfront">
             <img class="front-face" src="assets/images/roosterfront.png" alt="Rooster image front card">
             <img class="back-face" src="assets/images/cardback.png" alt="Back of card game">
-        </div>
-        <div class="farm-card" data-framework = "roosterfront">
+         </div>
+         <div class="farm-card" data-framework = "roosterfront">
             <img class="front-face" src="assets/images/roosterfront.png" alt="Rooster image front card">
             <img class="back-face" src="assets/images/cardback.png" alt="Back of card game">
-        </div>
-        <div class="farm-card" data-framework = "sheepfront">
+         </div>
+         <div class="farm-card" data-framework = "sheepfront">
             <img class="front-face" src="assets/images/sheepfront.png" alt="Sheep image front card">
             <img class="back-face" src="assets/images/cardback.png" alt="Back of card game">
-        </div>
-        <div class="farm-card" data-framework = "sheepfront">
+         </div>
+         <div class="farm-card" data-framework = "sheepfront">
             <img class="front-face" src="assets/images/sheepfront.png" alt="Sheep image front card">
             <img class="back-face" src="assets/images/cardback.png" alt="Back of card game">
-        </div>
-    </section>
-<!--Moves taken and restart button-->
-    <div class="moves-info">
-        Moves:
-        <span class="moves">0</span>
-    </div>
-    <div class="buttons">
-    <div class="restart-game">
-        <button onclick="restart()">RESTART</button>
-    </div>
-<!--Rules Button-->
-    <div class="game-rules">
-        <button data-modal-target="#modal">RULES</button>
-    </div>
-    </div>
-    <!--Rules Pop Up note-->
-   <div class="modal" id="modal">
-    <div class="modal-header">
-        <div class="title">How To Play</div>
-        <button data-close-button class="close">&times;</button>
-    </div>
-   <div class="modal-body">
-    <ol>
-        <li>Click on any 2 cards to flip over</li>
-        <li>Only 2 cards can be chosen at a time</li>
-        <li>Find all matching pairs</li>
-        <li>Restart game to try and beat your last score!</li>
-    </ol>
-</div>
-   </div>
-   <!--Background when modal pops up-->
-   <div id="overlay"></div>
-<!--Javascript file link-->
-    <script src="assets/js/script.js"></script>
-</body>
+         </div>
+      </section>
+      <!--Moves taken and restart button-->
+      <div class="moves-info">
+         Moves:
+         <span class="moves">0</span>
+      </div>
+      <div class="buttons">
+         <div class="restart-game">
+            <button onclick="restart()">RESTART</button>
+         </div>
+         <!--Rules Button-->
+         <div class="game-rules">
+            <button data-modal-target="#modal">RULES</button>
+         </div>
+      </div>
+      <!--Rules Pop Up note-->
+      <div class="modal" id="modal">
+         <div class="modal-header">
+            <div class="title">How To Play</div>
+            <button data-close-button class="close">&times;</button>
+         </div>
+         <div class="modal-body">
+            <ol>
+               <li>Click on any 2 cards to flip over</li>
+               <li>Only 2 cards can be chosen at a time</li>
+               <li>Find all matching pairs</li>
+               <li>Restart game to try and beat your last score!</li>
+            </ol>
+         </div>
+      </div>
+      <!--Background when modal pops up-->
+      <div id="overlay"></div>
+      <!--Javascript file link-->
+      <script src="assets/js/script.js"></script>
+   </body>
 </html>
