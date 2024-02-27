@@ -83,11 +83,14 @@ I wanted to keep the moves tracker quite simple, similar to that of other online
 Upon clicking the rules button, a display modal appears explaining how to play the game. I put an opacity overlay in the board background when the modal is active to add a bit more styling. The modal itself is bright yellow, the same as the yellow featured in the logo, and the font is the same Oswald font used throughout the project for consistency.
 <h1 align="center"><img src="/assets/images/howtoplay.png"/></h1>
 
-## Win Modal
+## Win Alert
+
+When all cards are turned and the game is over, a pop-up win alert will be triggered. Once the player hits "Ok", all cards will reset, reshuffle and move counter will go back to "0" to prepare for a new game.
 
 # Features Left To Implement
 
 <ul>
+<li>Addition of a win modal displaying the moves taken.</li>
 <li>Addition of a highest score leaderboard would be a nice addition I would like to add, for the player to see their own highest scores to try and beat previous personal bests.</li>
 <li>The implementation of moving imagery, where I can animate the logo and cause the characters to move when a matching pair is found. Similar to how you would see a card game in a casino on screen.</li>
 </ul>
@@ -97,7 +100,6 @@ Upon clicking the rules button, a display modal appears explaining how to play t
 <ul>
 <li>The site has been tested on Chrome, Safari & Firefox</li>
 <li>Testing has been implemented on various screen sizes to ensure responsivness across devices. Ipad, Galaxy and laptop testing has been implemented and passed.</li>
-<li></li>
 </ul>
 
 ## Validator Testing
@@ -115,7 +117,7 @@ Upon clicking the rules button, a display modal appears explaining how to play t
 <ul>
 <li>I encountered some issues with the positioning within CSS when I was first piecing everything together with the layout. It was an easy fix in the end and had to do with flex boxes causing me problems.</li>
 <li>I had some initial issues with syncing up the move counter within the function, after watching several more online tutorials, I managed to figure it out and get it to work.</li>
-<li></li>
+<li>I ran into some confusion with the endGame function when it was being called. Initially, it would pop up at the wrong time, but upon contacting tutoring services, they helped put me on the right path. It was a minor issue that I managed to resolve.</li>
 </ul>
 
 
@@ -142,15 +144,20 @@ Click save.
 <ul>
 <li>Javascript tutorial followed/adapted <a href="https://www.youtube.com/@CodeSketchLab" target="_blank">Code Sketch YouTube</a></li>
 <li>Javascript tutorial followed/adapted <a href="https://www.youtube.com/@JsAcademyOfficial" target="_blank">Javascript Academy Youtube YouTube</a></li>
-<li>General source of knowledge: <a href="https://www.w3schools.com" target="_blank">W3Schools</a><li>
-<li>General source of knowledge: <a href="https://www.geeksforgeeks.org" target="_blank">Geeks For Geeks</a><li>
+<li>General source: <a href="https://www.w3schools.com" target="_blank">W3Schools</a><li>
+<li>General source: <a href="https://www.geeksforgeeks.org" target="_blank">Geeks For Geeks</a><li>
+<li>General source: <a href="https://www.stackoverflow.com" target="_blank">Stack Overflow</a><li>
 </ul>
 
-
+## Formatting
+<ul>
+<li>Javascript formatting tool:<a href="https://www.prettier.io" target="_blank">Prettier</a></li>
+<li>HTML & CSS formatting tool: <a href="https://www.freeformatter.com" target="_blank">Free Formatter</a></li>
+</ul>
 
 ## Media:
 <ul>
-<li>Fonts: <a href="https://fonts.google.com/" target="_blank">Google Fonts</a></li>
+<li>Font: <a href="https://fonts.google.com/" target="_blank">Google Fonts</a></li>
 <li>Card front imagery source: <a href="https://freepiks.com" target="_blank">FreePiks</a></li>
 <li>Logo llustration: Own content</li>
 </ul>
