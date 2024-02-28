@@ -105,7 +105,7 @@ When all cards are turned and the game is over, a pop-up win alert will be trigg
 ## Validator Testing
 
 ## HTML:
-The initial validator testing showed issue with my section for the imagery on the cards. I went back and updated the section to a div
+The initial validator testing showed issue with my section for the imagery on the cards. I went back and updated the section to a div, and it now is passing validation.
 <h1 align="center"><img src="/assets/images/html.png"/></h1>
 
 ## CSS:
@@ -162,23 +162,21 @@ Click save.
 # Credits 
 
 ## Content
-<ul>
-<li>Javascript tutorial followed/adapted <a href="https://www.youtube.com/@CodeSketchLab" target="_blank">Code Sketch YouTube</a></li>
-<li>Javascript tutorial followed/adapted <a href="https://www.youtube.com/@JsAcademyOfficial" target="_blank">Javascript Academy Youtube YouTube</a></li>
-<li>General source: <a href="https://www.w3schools.com" target="_blank">W3Schools</a><li>
-<li>General source: <a href="https://www.geeksforgeeks.org" target="_blank">Geeks For Geeks</a><li>
-<li>General source: <a href="https://www.stackoverflow.com" target="_blank">Stack Overflow</a><li>
-</ul>
+
+- Javascript tutorial followed/adapted <a href="https://www.youtube.com/@CodeSketchLab" target="_blank">Code Sketch YouTube</a>
+- Javascript tutorial followed/adapted <a href="https://www.youtube.com/@JsAcademyOfficial" target="_blank">Javascript Academy YouTube</a>
+- General source: <a href="https://www.w3schools.com" target="_blank">W3Schools</a>
+- General source: <a href="https://www.geeksforgeeks.org" target="_blank">Geeks For Geeks</a>
+- General source: <a href="https://www.stackoverflow.com" target="_blank">Stack Overflow</a>
 
 ## Formatting
-<ul>
-<li>Javascript formatting tool: <a href="https://www.prettier.io" target="_blank">Prettier</a></li>
-<li>HTML & CSS formatting tool: <a href="https://www.freeformatter.com" target="_blank">Free Formatter</a></li>
-</ul>
+
+- Javascript formatting tool: <a href="https://www.prettier.io" target="_blank">Prettier</a>
+- HTML & CSS formatting tool: <a href="https://www.freeformatter.com" target="_blank">Free Formatter</a>
+
 
 ## Media:
-<ul>
-<li>Font: <a href="https://fonts.google.com/" target="_blank">Google Fonts</a></li>
-<li>Card front imagery source: <a href="https://freepiks.com" target="_blank">FreePiks</a></li>
-<li>Logo llustration: Own content</li>
-</ul>
+
+- Font: <a href="https://fonts.google.com/" target="_blank">Google Fonts</a>
+- Card front imagery source: <a href="https://freepiks.com" target="_blank">FreePiks</a>
+- Logo llustration: Own content

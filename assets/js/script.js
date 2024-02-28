@@ -1,6 +1,5 @@
 //Variable values
 const cards = document.querySelectorAll(".farm-card");
-var totalNumberOfCards = cards.length;
 //Moves counter
 const moveContainer = document.querySelector(".moves");
 //Rules Button
@@ -8,6 +7,8 @@ const openModalButton = document.querySelectorAll("[data-modal-target]");
 const closeModalButton = document.querySelectorAll("[data-close-button]");
 const overlay = document.getElementById("overlay");
 
+//Changeable variable values
+let totalNumberOfCards = cards.length;
 //Knowing which card flips first to make a match
 let hasFlippedCard = false;
 let firstCard, secondCard;
@@ -19,14 +20,14 @@ let revealedCards = 0;
 cards.forEach((card) => card.addEventListener("click", flipCard));
 shuffle();
 
-//Event Listener for Buttons open/close Web Dev Simplified tutorial
+//Event Listener for Buttons open/close Web Dev Simplified tutorial - Youtube
 openModalButton.forEach((button) => {
   button.addEventListener("click", () => {
     const modal = document.querySelector(button.dataset.modalTarget);
     openModal(modal);
   });
 });
-//Closes modal when clicking outside the modal box Web Dev Simplified tutorial
+//Closes modal when clicking outside the modal box Web Dev Simplified tutorial - Youtube
 overlay.addEventListener("click", () => {
   const modals = document.querySelectorAll(".modal.active");
   modals.forEach((modal) => {
@@ -57,7 +58,7 @@ function closeModal(modal) {
   overlay.classList.remove("active");
 }
 
-//Score count feature Javascript Academy tutorial
+//Score count adaptation feature - Javascript Academy tutorial Youtube
 moves = 0;
 moveContainer.innerHtml = 0;
 
@@ -65,7 +66,7 @@ function addMove() {
   moves++;
   moveContainer.innerHTML = moves;
 }
-
+//Code Sketch Lab adaptation - Youtube
 function flipCard() {
   if (lockBoard) {
     return;
@@ -88,7 +89,7 @@ function flipCard() {
 }
 
 function checkForMatch() {
-  let isMatch = firstCard.dataset.framework === secondCard.dataset.framework;
+  let isMatch = firstCard.dataset.identifier === secondCard.dataset.identifier;
   if (isMatch) {
     disableCards();
     revealedCards += 2;
@@ -101,7 +102,7 @@ function checkForMatch() {
   }
 }
 
-//Code Sketch Lab adaptation
+
 
 function disableCards() {
   firstCard.removeEventListener("click", flipCard);
@@ -134,12 +135,11 @@ function resetBoard() {
   firstCard = null;
   secondCard = null;
 }
-//Restart Game Button adaption of Javascript Academy tutorial
+//Restart Game Button adaption of Javascript Academy tutorial YouTube
 function restart() {
   setTimeout(() => {
     moves = 0;
     moveContainer.innerHTML = 0;
-    flippedCard = false;
     hasFlippedCard = false;
     firstCard = null;
     secondCard = null;
