@@ -1,6 +1,6 @@
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
-
+/* General page settings */
 * {
 	padding: 0;
 	margin: 0;
@@ -11,7 +11,7 @@ body {
 	height: 100vh;
 	background: #D55225;
 }
-
+/* Main Logo */
 .farm-logo {
 	padding-top: 10px;
 	width: 275px;
@@ -23,7 +23,7 @@ body {
 	text-align: center;
 	padding-top: 20px;
 }
-
+/* Game Area */
 .farm-game {
 	width: 500px;
 	height: 420px;
@@ -36,7 +36,7 @@ body {
 	/*3D perspective*/
 	perspective: 1000px;
 }
-
+/* Cards */
 .farm-card {
 	width: calc(25% - 10px);
 	height: calc(33.333% - 10px);
@@ -59,7 +59,7 @@ body {
 .farm-card.flip {
 	transform: rotateY(180deg);
 }
-
+/* Front & Back Face On Cards */
 .front-face,
 .back-face {
 	justify-content: center;
@@ -78,7 +78,7 @@ body {
 .front-face {
 	transform: rotateY(180deg);
 }
-
+/* Moves Taken Section */
 .moves-info {
 	color: black;
 	position: relative;
@@ -92,7 +92,7 @@ body {
 	display: flex;
 	justify-content: center;
 }
-
+/* Restart Button */
 .restart-game {
 	padding-bottom: 20px;
 	margin-right: 20px;
@@ -108,7 +108,7 @@ body {
 	border-color: black;
 	font-family: 'Oswald';
 }
-
+/* Rules Button */
 .game-rules {
 	padding-bottom: 20px;
 	margin-left: 20px;
@@ -125,7 +125,7 @@ body {
 	border-color: black;
 	font-family: 'Oswald';
 }
-
+/* Rules Pop-Up - Web Dev Simplified Tutorial Adaptation On Styling Modals */
 .modal {
 	position: fixed;
 	/* Web Dev Simplified tutorial for centering modal */
@@ -198,6 +198,7 @@ body {
 
 /* Media Queries */
 @media only screen and (max-width: 680px) {
+/* Game Area */
 
 	.farm-game {
 		width: 45vh;
@@ -205,14 +206,19 @@ body {
 		margin: auto;
 	}
 
+/* Main Logo */
 
 	.farm-logo {
 		padding-top: 10px;
 		width: 225px;
 		height: 270px;
 	}
+/* Card Game Front & Back Face */
 
-
+	.front-face,
+	.back-face {
+	padding: 8px;
+	}
 	
 
 
