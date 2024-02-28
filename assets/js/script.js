@@ -7,6 +7,7 @@ const openModalButton = document.querySelectorAll("[data-modal-target]");
 const closeModalButton = document.querySelectorAll("[data-close-button]");
 const overlay = document.getElementById("overlay");
 
+
 //Changeable variable values
 let totalNumberOfCards = cards.length;
 //Knowing which card flips first to make a match
@@ -15,6 +16,7 @@ let firstCard, secondCard;
 let lockBoard = false;
 let moves = 0;
 let revealedCards = 0;
+
 
 //Event listener for when card is clicked
 cards.forEach((card) => card.addEventListener("click", flipCard));
@@ -154,7 +156,21 @@ function endGame() {
     setTimeout(() => {
         cards.forEach((card) => card.classList.remove("flip"));
         resetBoard();
-        alert("Win!");
+        // Sweet Alert - sweetalert2.github.io adapted for the game
+        Swal.fire({
+          title: "Game Over!",
+          text: "Moves: " + moves,
+          width: 300,
+          padding: "2em",
+          color: "black",
+          background: "#fced21db",
+          confirmButtonColor: "#F7941D",
+          backdrop: `
+          #f7951db4
+            left top
+            no-repeat
+          `
+        });
         restart();
-    }, 1500);
+    }, 1400);
 }

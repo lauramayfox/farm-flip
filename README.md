@@ -120,7 +120,7 @@ The CSS passed validation.
 </p>
 
 ## JavaScript:
-JavaScript code was run through <a href="https://www.https://codebeautify.org/jsvalidate" target="_blank">Code Beautify</a> which mentioned an unexpected 'const' on line 2.
+JavaScript code was run through <a href="https://www.jshint.com" target="_blank">JS Hint</a>. Initially it was displaying an error with the Sweet Alert I added to the end of game section, mentioning to declare the value, so I gave it a let variable at the start of the document and the error went away.
 
 
 
@@ -128,6 +128,10 @@ JavaScript code was run through <a href="https://www.https://codebeautify.org/js
 Overall, I am happy with how the LightHouse report results came up. I have read through and made note of some of the subtle changes that could help my game to get fuller marks for future deployments.
 
 ### Lighthouse - Mobile Devices
+
+The lighthouse reports were varied depending on browser extentions versus incognito mode. The results I got, as seen below, were from my regular Chrome browser. When tested on my mentor's browser and a family member's browser, different results were displaying. The conclusion made is that some web browser extentions could hinder the results, and incognito view would be best to see the true results if there are any extentions causing issue.<br>
+<br>
+The lighthouse reports also signal a low-res warning for the chicken logo on the card back. I don't believe it is an issue to worry about, as there is no text present. If there was some text or logo font present, I can see how this would be an issue needing to be rectified.
 
 <h1 align="center"><img src="/assets/images/mobile.png"/></h1>
 
@@ -137,7 +141,7 @@ Overall, I am happy with how the LightHouse report results came up. I have read 
 
 # Bugs/Errors or Issues Encountered
 <ul>
-<li>I encountered some issues with the positioning within CSS when I was first piecing everything together with the layout. It was an easy fix in the end and had to do with flex boxes causing me problems.</li>
+<li>I encountered some issues with the positioning within CSS when I was first piecing everything together with the layout. On smaller screens, everything wasn't lining up correctly. It was an easy fix in the end after using Google Dev Tools to play around with the layout, and it was a position and display issue which fixed the problem.</li>
 <li>I had some initial issues with syncing up the move counter within the function, after watching several more online tutorials, I managed to figure it out and get it to work.</li>
 <li>I ran into some confusion with the endGame function when it was being called. Initially, it would pop up at the wrong time, but upon contacting tutoring services, they helped put me on the right path. It was a minor issue that I managed to resolve.</li>
 </ul>
@@ -163,11 +167,17 @@ Click save.
 
 ## Content
 
-- Javascript tutorial followed/adapted <a href="https://www.youtube.com/@CodeSketchLab" target="_blank">Code Sketch YouTube</a>
-- Javascript tutorial followed/adapted <a href="https://www.youtube.com/@JsAcademyOfficial" target="_blank">Javascript Academy YouTube</a>
+- Javascript/CSS tutorials followed/adapted from the learn vanilla javascript series via <a href="https://www.youtube.com/@CodeSketchLab" target="_blank">Code Sketch YouTube</a>
+- Javascript tutorial followed/adapted <a href="https://www.youtube.com/watch?v=xWdkt6KSirw" target="_blank">Javascript Academy YouTube</a>
+- Javascript/CSS tutorial followed/adapted <a href="https://www.youtube.com/watch?v=MBaw_6cPmAw" target="_blank">Web Dev Simplified YouTube</a>
+- Game layout inspiration and general source of information  <a href="https://www.youtube.com/watch?v=M0egyNvsN-Y" target="_blank">Online Tutorials YouTube</a>
 - General source: <a href="https://www.w3schools.com" target="_blank">W3Schools</a>
 - General source: <a href="https://www.geeksforgeeks.org" target="_blank">Geeks For Geeks</a>
 - General source: <a href="https://www.stackoverflow.com" target="_blank">Stack Overflow</a>
+
+## End Of Game Alert
+
+<a href="https://www.sweetalert2.io" target="_blank">Sweetalert2</a>
 
 ## Formatting
 
