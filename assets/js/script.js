@@ -68,7 +68,7 @@ function addMove() {
    moves++;
    moveContainer.innerHTML = moves;
 }
-//Code Sketch Lab adaptation - Youtube
+//Code Sketch Lab Vanilla Javascript adaptation - Youtube
 function flipCard() {
    if (lockBoard) {
       return;

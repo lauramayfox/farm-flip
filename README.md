@@ -5,7 +5,8 @@
 ## Portfolio Project 2 - Javascript Essentials
 
 I have created a farm animal themed card flip memory game geared towards a younger target audience, but suitable for
-all ages. I hope to provide a fun, colourful and interactive gaming experience!
+all ages. I hope to provide a fun, colourful and interactive gaming experience!<br>
+<a href ="https://lauramayfox.github.io/farm-flip/">Farm Flip live link</a>
 
 <h1 align="center"><img src="assets/images/mockup.png"/></h1>
 
