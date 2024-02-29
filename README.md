@@ -62,7 +62,7 @@ The logo was inpired by a previous design I did for a fictitius chicken restaura
 
 
 ## Game Grid & Cards
-The gaming grid consists of 4x3, 12 cards in total. This number of cards was chosen to keep the game at an adequate pace, especially for younger players, and to also work well on smaller screen sizes. The colour orange was chosen to compliment the chicken logo colours and background,while the white outline was chosen to compliment the white background of the main logo character.
+The gaming grid consists of 4x3, 12 cards in total. My initial wireframe idea had an extra row, but I decided to take a row out to keep the game at an adequate pace, especially for younger players, and to also work well on smaller screen sizes. The colour orange was chosen to compliment the chicken logo colours and background,while the white outline was chosen to compliment the white background of the main logo character.
 <h1 align="center"><img src="/assets/images/gameboard.png"/></h1>
 
 
