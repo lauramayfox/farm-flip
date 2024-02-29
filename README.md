@@ -124,7 +124,9 @@ The CSS passed validation.
 </p>
 
 ## JavaScript:
-JavaScript code was run through <a href="https://www.jshint.com" target="_blank">JS Hint</a>.
+JavaScript code was run through <a href="https://www.jshint.com" target="_blank">JS Hint</a>. The warnings are generally just stating that some of the syntax is only available in ES6. One other warning that presented itself was that the Sweetalert2 for the end of game pop up stated as undefined. (See errors/issues encountered).
+<h1 align="center"><img src="/assets/images/swal.png"/></h1>
+
 
 
 
@@ -145,9 +147,11 @@ The lighthouse reports also signal a low-res warning for the chicken logo on the
 
 # Bugs/Errors or Issues Encountered
 <ul>
-<li>I encountered some issues with the positioning within CSS when I was first piecing everything together with the layout. On smaller screens, everything wasn't lining up correctly. It was an easy fix in the end after using Google Dev Tools to play around with the layout, and it was a position and display issue which fixed the problem.</li>
+<li>I encountered issue with positioning within CSS when I was first placed everything together with the layout. On smaller screens, the elements were not lining up correctly. It was an easy fix in the end after using Google Dev Tools to play around with the layout, and it was a position and display issue which fixed the problem.</li>
 <li>I had some initial issues with syncing up the move counter within the function, after watching several more online tutorials, I managed to figure it out and get it to work.</li>
 <li>I ran into some confusion with the endGame function when it was being called. Initially, it would pop up at the wrong time, but upon contacting tutoring services, they helped put me on the right path. It was a minor issue that I managed to resolve.</li>
+<li>There was a bug found when I had family members test out the game. Since I would only trial one game round up until this point, I had missed it completely. What was happening was on completion of the game and going into a second game, it was triggering the alert of the game end after 2 card turns. I realised I hadn't adapted the next round part to work as it should, and I made amendments to the endGame function through some trial and error until I got the final result I was looking for. </li>
+<li>Upon running my JavaScript code into JSHint, it is showing a warning for an undefind variable of Swal (the Sweetalert2). There is no mention on the host site that there is a need to define it, and I looked at other resources that do not show it being defined as a variable. I tested it out anyway to see if it made any difference to define it, and it caused issues within the game, so that is why I have left this warning as it is.
 </ul>
 
 
@@ -181,7 +185,7 @@ Click save.
 
 ## End Of Game Alert
 
-<a href="https://www.sweetalert2.io" target="_blank">Sweetalert2</a>
+Alert template used and amended from <a href="https://www.sweetalert2.io" target="_blank">Sweetalert2</a>
 
 ## Formatting
 
