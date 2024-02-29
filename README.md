@@ -85,12 +85,16 @@ Upon clicking the rules button, a display modal appears explaining how to play t
 
 ## Win Alert
 
-When all cards are turned and the game is over, a pop-up win alert will be triggered. Once the player hits "Ok", all cards will reset, reshuffle and move counter will go back to "0" to prepare for a new game.
+I used <a href="https://www.sweetalert2" target="_blank">Sweetalert2</a> to trigger the end of game message within my endGame function. This site is a brilliant resource which was introduced to me by my mentor, and is widely used across the developer community. I added the relevant links for Sweetalert2 into the head of my HTML for the style sheet, and at the bottom of my HTML for the JavaScript. I then edited the alert message to display "Game Over!" and incorporated the games colours into the alert.<br>
+<h1 align="center"><img src="/assets/images/gameover.png"/></h1>
+I then decided after testing the new alert to add the move counter result into the pop-up, since you might have missed what your final move was once the alert appears.<br>
+
+When all cards are turned and the game is over, the alert will trigger displaying the message "Game Over! Moves: "". Once the player hits "Ok", all cards will reset, reshuffle and move counter will go back to "0" to prepare for a new game.
+<h1 align="center"><img src="/assets/images/gameovermoves.png"/></h1>
 
 # Features Left To Implement
 
 <ul>
-<li>Addition of a win modal displaying the moves taken.</li>
 <li>Addition of a highest score leaderboard would be a nice addition I would like to add, for the player to see their own highest scores to try and beat previous personal bests.</li>
 <li>The implementation of moving imagery, where I can animate the logo and cause the characters to move when a matching pair is found. Similar to how you would see a card game in a casino on screen.</li>
 </ul>
@@ -120,7 +124,7 @@ The CSS passed validation.
 </p>
 
 ## JavaScript:
-JavaScript code was run through <a href="https://www.jshint.com" target="_blank">JS Hint</a>. Initially it was displaying an error with the Sweet Alert I added to the end of game section, mentioning to declare the value, so I gave it a let variable at the start of the document and the error went away.
+JavaScript code was run through <a href="https://www.jshint.com" target="_blank">JS Hint</a>.
 
 
 

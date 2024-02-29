@@ -169,8 +169,8 @@ function endGame() {
           #f7951db4
             left top
             no-repeat
-          `
+          `,
         });
-        restart();
+    restart();
     }, 1400);
 }
