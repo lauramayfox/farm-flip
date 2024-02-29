@@ -136,11 +136,13 @@ function resetBoard() {
     lockBoard = false;
     firstCard = null;
     secondCard = null;
+    
 }
 //Restart Game Button adaption of Javascript Academy tutorial YouTube
 function restart() {
     setTimeout(() => {
         moves = 0;
+        revealedCards=0;
         moveContainer.innerHTML = 0;
         hasFlippedCard = false;
         firstCard = null;
@@ -155,7 +157,7 @@ function restart() {
 function endGame() {
     setTimeout(() => {
         cards.forEach((card) => card.classList.remove("flip"));
-        resetBoard();
+        
         // Sweet Alert - sweetalert2.github.io adapted for the game
         Swal.fire({
           title: "Game Over!",
@@ -171,6 +173,10 @@ function endGame() {
             no-repeat
           `,
         });
-    restart();
+       
+    if (revealedCards === totalNumberOfCards) {
+        resetBoard();
+        restart(); }
     }, 1400);
+  
 }
