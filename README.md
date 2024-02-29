@@ -125,7 +125,7 @@ The CSS passed validation.
 
 ## JavaScript:
 JavaScript code was run through <a href="https://www.jshint.com" target="_blank">JS Hint</a>. The warnings are generally just stating that some of the syntax is only available in ES6. One other warning that presented itself was that the Sweetalert2 for the end of game pop up stated as undefined. (See errors/issues encountered).
-<h1 align="center"><img src="/assets/images/swal.png"/></h1>
+<h1><img src="/assets/images/swal.png"/></h1>
 
 
 
